@@ -1,0 +1,65 @@
+.navbar{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+.cont-left{
+    display: flex;
+}
+.cont-left > img{
+    height: 50px;
+}
+.cont-left > ul{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    align-items: center;
+}
+.cont-left > ul li:hover{
+    animation: bounce 1s ease-in;
+    cursor: pointer;
+    
+}
+/* .cont-left > ul > li{
+    transition: transform 0.3s;
+
+}
+.cont-left > ul > li :hover{
+    transform: translate(-10px);
+
+} */
+.cont-right{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.cont-right > button{
+    background-color: rgb(236, 75, 102);
+    width: 90px;
+}
+
+@keyframes bounce {
+    0%,20%,50%,90%,100%{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-13px);
+    }
+    60%{
+        transform: translateY(-7px);
+    }
+    80%{
+        transform: translateY(3px);
+    }
+}
+
+.bounce:hover {
+    animation: bounce 1s ease-in;
+    cursor: pointer;
+}
