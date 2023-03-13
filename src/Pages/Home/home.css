@@ -3,9 +3,7 @@
     scroll-snap-align: center;
     scroll-behavior: smooth;
 }
-.home_cont{
-    align-items: center;
-}
+
 @keyframes slide{
     from{
         transform : translate(-100%)
@@ -21,24 +19,4 @@
     to{
         transform : translateY(-5px)
     }
-}
-#name-yash{
-    font-size: 80px;
-    text-align: center;
-    animation: slide 5s ease-in;
-    animation-iteration-count: infinite;
-    transition: smooth;
-    padding-top: 20%;
-}
-#developer{
-    font-style: 60px;
-    text-align: center;
-    align-items: center;
-    /* animation: slideleft 4s ease-in;
-    animation-iteration-count: infinite;
-    transition: smooth; */
-}
-#developer:hover{
-    animation: slideleft 1s ease-in;
-    animation-iteration-count: infinite;
 }
