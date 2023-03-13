@@ -1,16 +1,19 @@
-import { Box,Heading,Text } from '@chakra-ui/react'
+import { Box,Heading,Text,Image } from '@chakra-ui/react'
 import React from 'react'
 import Navbar from '../../Components/Navbar/Navbar'
 import './home.css'
+import Parallax from '../../Components/Parallax/Parallax'
+import myimg from './Yash-removebg.png'
+
 
 const Home = () => {
   return (
     <Box className='home_body' >
       <Navbar/>
-      <Box className='home_cont'>
-        <Heading className='name-yash bounce' id='name-yash'>Yash Raj</Heading>
-        <Heading id='developer'>Front-End Developer</Heading>
+      <Box w={'45vh'} margin={'auto'}>
+        <Image w={'100%'} src={myimg} />
       </Box>
+      <Parallax/>
     </Box>
   )
 }
