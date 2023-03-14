@@ -6,11 +6,15 @@ import React, { useRef } from 'react'
 const Cube = () => {
   return (
     <Box>
-        <Canvas>
-          <OrbitControls enableZoom={false} autoRotate={true  } />
+        <Canvas camera={{fov:25 , position:[5,5,5]}}>
+          <OrbitControls enableZoom={false} autoRotate />
           <ambientLight intensity={1} />
           <directionalLight position={[3,2,1]} />
-            <Cubemesh />
+            <mesh>
+              <boxGeometry args={[1.5,1.5,1.5]}/> 
+              <meshStandardMaterial color={'rgb(242, 188, 242)'}/>
+
+            </mesh> 
         </Canvas>
     </Box>
   )
@@ -19,26 +23,10 @@ const Cube = () => {
 export default Cube
 
 
-const Cubemesh = () => {
-  const textRef = useRef()
-  useFrame((state) => (textRef.current.position.x = Math.sin(state.clock.elapsedTime)))
+// const Cubemesh = () => {
+//   const textRef = useRef()
+//   useFrame((state) => (textRef.current.position.x = Math.sin(state.clock.elapsedTime)))
 
-  return(
-    <mesh>
-              <boxGeometry args={[2.5,2.5,2.5]} /> 
-              <meshStandardMaterial>
-
-              <RenderTexture attach="map">
-                <PerspectiveCamera 
-                makeDefault
-                position={[0,0,2]}
-                />
-                <color attach='background' args={['rgb(240, 194, 245)']} />
-                <Text ref={textRef} fontSize={0.8} color='rgb(103, 101, 101)'>
-                hello
-                </Text>
-              </RenderTexture>
-              </meshStandardMaterial>
-            </mesh>
-  )
-}
+//   return(
+//   )
+// }
