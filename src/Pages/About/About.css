@@ -1,6 +1,5 @@
 .About_body{
     width: 100%;
-    margin: auto;
     height: 100vh;
     scroll-snap-align: center;
 }
@@ -20,28 +19,21 @@
     font-size: 20px;
     color: rgb(227, 224, 224);
 }
-.skills-cont{
+.social-cont{
     margin-top: 7vh;
 
 }
-.skills-text{
+.social-text{
     font-size: 30px;
 }
-.skills{
+.social{
     margin-top: 4vh;
     display: flex;
     gap: 28px;
     /* grid-template-columns: repeat(3,1fr);
     gap: 10px; */
 }
-.skills > div{
-    padding: 15px;
-    border-radius: 15px;
-    box-shadow: rgba(170, 168, 168, 0.16) 0px 1px 4px;
-}
-.skills > div:hover{
-    box-shadow: rgba(211, 210, 210, 0.16) 0px 1px 4px;
-}
+
 .About-flex-box{
     display: flex;
     justify-content: space-around;
@@ -49,4 +41,5 @@
 .cube-cont{
     display: flex;
     justify-content: center;
+    /* color: rgb(242, 188, 242); */
 }

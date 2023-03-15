@@ -13,6 +13,7 @@ import {
 } from "framer-motion";
 
 import { wrap } from "@motionone/utils";
+import { Text } from '@chakra-ui/react';
 
 
 
@@ -84,10 +85,10 @@ const Parallax = () => {
   return (
     <div>
       <section>
-          <ParallaxText  baseVelocity={-1}>
-           Yash Raj
+          <ParallaxText  baseVelocity={-2}>
+           <Text fontSize={'125px'} >Yash Raj</Text> 
           </ParallaxText>
-          <ParallaxText baseVelocity={0.5}>
+          <ParallaxText baseVelocity={2}>
             Front End Developer
           </ParallaxText>
         </section>

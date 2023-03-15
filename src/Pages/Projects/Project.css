@@ -1,3 +1,42 @@
 .Projects_body{
     height: 100vh;
+    scroll-behavior: smooth;
+}
+.projects{
+    width: 70%;
+    height: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    justify-content: center;
+}
+.projects > div{
+    width: 300px;
+    height: 250px;
+    border-radius: 15px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+.projects > div:hover{
+    width: 350px;
+    height: 520px;
+}
+.projects > div img{
+    width: 250px;
+    height: 250px;
+    margin: auto;
+}
+.heading{
+    font-size: 20px;
+    transition: 0.5s ease-in-out;
+    text-align: center;
+    transform: rotate(0.001deg);
+}
+.content{
+    width: 90%;
+    margin: auto;
 }

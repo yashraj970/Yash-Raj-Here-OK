@@ -1,8 +1,6 @@
 .App_body{
   color: white;
-  background-image: url(../src/images/bg-portfolio.jpg);
-  scroll-snap-type: y mandatory;
+  background-image: url(../src/images/Bg-3.jpg);
   scroll-behavior: smooth;
-  overflow-y: auto;
-  font-family: sans-serif;
+  font-family: 'Dennis Sans', sans-serif
 }

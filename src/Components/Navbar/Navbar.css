@@ -3,7 +3,7 @@
     justify-content: center;
 }
 .container{
-    width: 80%;
+    width: 87%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,10 +36,10 @@
 } */
 .cont-right{
     display: flex;
-    gap: 30px;
+    gap: 60px;
     align-items: center;
 }
-.cont-right > button{
+.hire-now > button{
     background-color: rgb(236, 75, 102);
     width: 90px;
 }
@@ -49,10 +49,10 @@
         transform: translateY(0);
     }
     40%{
-        transform: translateY(-13px);
+        transform: translateY(-8px);
     }
     60%{
-        transform: translateY(-7px);
+        transform: translateY(-5px);
     }
     80%{
         transform: translateY(3px);
@@ -62,4 +62,15 @@
 .bounce:hover {
     animation: bounce 1s ease-in;
     cursor: pointer;
+}
+
+
+
+@media screen and (min-width:101px) and (max-width:700px){
+    .none{
+        display: none;
+    }
+    .container{
+        width: 77%;
+    }
 }

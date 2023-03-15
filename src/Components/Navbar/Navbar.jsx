@@ -19,13 +19,13 @@ const Navbar = () => {
           <div><img src="" alt="" /></div>
           <ul>
             <li>Home</li>
-            <li>About</li>
-            <li>Projects</li>
+            <li className='none'>About</li>
+            <li className='none'>Projects</li>
           </ul>
         </div>
         <div className='cont-right' >
-          <p className='bounce'>Contacts</p>
-          <Button>Hire Now</Button>
+          <p className='bounce none'>Contacts</p>
+         <Box className='hire-now none'> <Button>Hire Now</Button></Box>
           <Box>
           <Menu>
                 <MenuButton

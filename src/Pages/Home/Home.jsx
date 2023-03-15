@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <Box className='home_body' >
       <Navbar/>
-      <Box w={'45vh'} margin={'auto'}>
+      <Box w={'48vh'} margin={'auto'}>
         <Image w={'100%'} src={myimg} />
       </Box>
       <Parallax/>

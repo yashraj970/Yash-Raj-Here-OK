@@ -2,6 +2,7 @@
     height: 100vh;
     scroll-snap-align: center;
     scroll-behavior: smooth;
+    background-image: url(../../images/Bg-2.jpg);
 }
 
 @keyframes slide{
